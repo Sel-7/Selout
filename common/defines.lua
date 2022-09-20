@@ -1274,7 +1274,7 @@ NMilitary = {
 	UNLOAD_COST_FRIENDLY = 12,						-- cost to unload to friendly territory
 	UNLOAD_COST_ENEMY = 36,							-- cost to hostile.
 	LEADER_MAINTENANCE_COST = 1,					-- how much mil power each leader costs.
-	GARRISON_SIZE = 1000, 							-- GARRISON_SIZE
+	GARRISON_SIZE = 2000, 							-- GARRISON_SIZE
 	SIEGE_FORCE_NEEDED_MULTIPLIER = 3,				-- x times garrison to be able to siege.
 	MAX_BREACH = 3,
 	SIEGE_GARRISON_SURRENDER = 100,					-- A siege ends when there is less than 100 defenders left.
@@ -1308,7 +1308,7 @@ NMilitary = {
 	INFANTRY_COST = 10.0, 							-- _MDEF_INFANTRY_COST = 10,
 	CAVALRY_COST = 25.0, 							-- _MDEF_CAVALRY_COST = 10,
 	ARTILLERY_COST = 30.0, 							-- _MDEF_ARTILLERY_COST = 10,
-	FORTRESS_COST = 0.5,							-- base fort cost
+	FORTRESS_COST = 0.25,							-- base fort cost
 	HEAVY_SHIP_COST = 50, 							-- _MDEF_HEAVY_SHIP_COST = 10,
 	LIGHT_SHIP_COST = 20, 							-- _MDEF_LIGHT_SHIP_COST = 10,
 	GALLEY_COST = 10, 								-- _MDEF_GALLEY_COST = 10,
@@ -1626,7 +1626,7 @@ NAI = {
 	EXTRA_SURPLUS_WHEN_NEEDING_BUILDINGS = 0.15, -- AI will aim for having at least this fraction of their income as additional surplus when they need buildings
 	MAX_SAVINGS = 60, -- AI will keep a maximum of this * their monthly income in long-term savings
 	BUDGET_STEAL_THRESHOLD = 10.0, -- AI will move budget from one area to another if its priority is this many times as high.
-	ADVISOR_BUDGET_FRACTION_MAX = 0.35, -- AI will spend a maximum of this fraction of monthly income on advisor maintenance
+	ADVISOR_BUDGET_FRACTION_MAX = 0.5, -- AI will spend a maximum of this fraction of monthly income on advisor maintenance
 	ADVISOR_BUDGET_FRACTION_MIN = 0.15, -- AI will spend a minimum of this fraction of monthly income on advisor maintenance
 	ADVISOR_BUDGET_FRACTION_MERITOCRACY_MAX = 0.5, -- If the AI has meritocracy enabled
 	ADVISOR_BUDGET_FRACTION_MERITOCRACY_MIN = 0.25, -- If the AI has meritocracy enabled
