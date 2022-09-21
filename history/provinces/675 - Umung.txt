@@ -1,10 +1,9 @@
 #675 - Qujing
 
-owner = MNG
-controller = MNG
-add_core = MNG
-add_core = CYI
-culture = yi
+owner = CDL
+controller = CDL
+add_core = CDL
+culture = bai
 religion = animism
 capital = "Umung"
 trade_goods = copper

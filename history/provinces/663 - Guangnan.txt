@@ -1,8 +1,8 @@
 #663 - Wenshan
 
-owner = MNG
-controller = MNG
-add_core = MNG
+owner = CDL
+controller = CDL
+add_core = CDL
 culture = bai
 religion = buddhism
 capital = "Guangnan"
@@ -12,7 +12,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = CDL
+
 
 
 
