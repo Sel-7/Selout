@@ -1,9 +1,9 @@
 #680 - Chongqing
 
-owner = MNG
-controller = MNG
-add_core = MNG
-culture = sichuanese
+owner = CXI
+controller = CXI
+add_core = CXI
+culture = hubei
 religion = confucianism
 capital = "Chongqing"
 trade_goods = spices

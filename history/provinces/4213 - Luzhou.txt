@@ -1,9 +1,9 @@
 #4213 - Luzhou
 
-owner = MNG
-controller = MNG
-add_core = MNG
-culture = sichuanese
+owner = CXI
+controller = CXI
+add_core = CXI
+culture = hubei
 religion = confucianism
 capital = "Luzhou"
 trade_goods = grain

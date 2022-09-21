@@ -1,10 +1,10 @@
 # 2170 - Songqu
 
-owner = MNG
-controller = MNG
-add_core = MNG
-culture = tibetan
-religion = vajrayana
+owner = CXI
+controller = CXI
+add_core = CXI
+culture = hubei
+religion = confucianism
 capital = "Songqu"
 trade_goods = livestock
 hre = no
