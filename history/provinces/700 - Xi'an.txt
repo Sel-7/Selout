@@ -1,16 +1,16 @@
 #700 - Shaanxi
 
-owner = MNG
-controller = MNG
-add_core = MNG
+owner = CSH
+controller = CSH
+add_core = CSH
 culture = xibei
 religion = confucianism
 capital = "Xi'an"
 trade_goods = grain
 hre = no
 base_tax = 7
-base_production = 7
-base_manpower = 3
+base_production = 4
+base_manpower = 7
 is_city = yes
 add_core = CSH
 add_core = QIN

@@ -1,8 +1,8 @@
 #689 - Hanzhong
 
-owner = MNG
-controller = MNG
-add_core = MNG
+owner = CSH
+controller = CSH
+add_core = CSH
 culture = xibei
 religion = confucianism
 capital = "Hanzhong"
@@ -13,7 +13,6 @@ base_production = 4
 base_manpower = 3
 is_city = yes
 add_core = CSH
-add_core = QIN
 
 
 
