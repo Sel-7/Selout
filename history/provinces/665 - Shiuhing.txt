@@ -1,8 +1,8 @@
 #665 - Jiangmen
 
-owner = MNG
-controller = MNG
-add_core = MNG
+owner = YUE
+controller = YUE
+add_core = YUE
 culture = cantonese
 religion = confucianism
 capital = "Shiuhing"

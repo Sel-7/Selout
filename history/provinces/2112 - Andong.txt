@@ -1,8 +1,8 @@
 # 2112 - Andong
 
-owner = MNG
-controller = MNG
-add_core = MNG
+owner = YAN
+controller = YAN
+add_core = YAN
 culture = manchu
 religion = confucianism
 capital = "Andong"
