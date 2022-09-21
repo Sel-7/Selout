@@ -1,12 +1,11 @@
 #2406 - Jianchang
 
-owner = MNG
-controller = MNG
-add_core = MNG
-add_core = CYI
+owner = CDL
+controller = CDL
+add_core = CDL
 add_core = CDL
 culture = yi
-religion = animism
+religion = buddhism
 capital = "Jianchang"
 trade_goods = grain
 hre = no
