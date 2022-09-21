@@ -1,8 +1,8 @@
 #1838 - Hefei
 
-owner = MNG
-controller = MNG
-add_core = MNG
+owner = NNG
+controller = NNG
+add_core = NNG
 culture = jianghuai
 religion = confucianism
 capital = "Hefei"

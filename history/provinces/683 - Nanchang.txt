@@ -1,8 +1,8 @@
 #683 - Nanchang
 
-owner = MNG
-controller = MNG
-add_core = MNG
+owner = NNG
+controller = NNG
+add_core = NNG
 culture = gan
 religion = confucianism
 capital = "Nanchang"

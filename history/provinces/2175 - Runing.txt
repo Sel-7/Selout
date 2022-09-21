@@ -1,8 +1,8 @@
 # 2175 - Runing
 
-owner = MNG
-controller = MNG
-add_core = MNG
+owner = TNG
+controller = TNG
+add_core = TNG
 culture = zhongyuan
 religion = confucianism
 capital = "Runing"
