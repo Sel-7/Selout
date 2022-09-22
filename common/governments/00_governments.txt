@@ -23,7 +23,7 @@ monarchy = {
 				tsardom
 				mamluk_government
 				feudal_theocracy
-				celestial_empire
+	
 				shogunate
 				english_monarchy
 				mandala_reform
@@ -31,9 +31,6 @@ monarchy = {
 				holy_state_reform
 				austrian_archduchy_reform
 				siamese_absolutism
-				sicilian_emirate_restored
-				swedish_empire
-				corvinius_empire
 				
 				# Custom reforms start here
 				h_reform_prefecture
@@ -59,12 +56,7 @@ monarchy = {
 				black_army_reform
 				legion_of_honor_reform
 				imperial_nobility_reform
-				turkish_empire
-				habsburg_empire
-				anglo_dutch_union
-				free_the_copts
-				greater_kongo
-				angevin_empire
+
 			}
 		}
 		bureaucracy = {
@@ -141,7 +133,6 @@ monarchy = {
 		mamluk_government_legacy
 		feudal_theocracy_legacy
 		elective_monarchy_legacy
-		celestial_empire_legacy
 		ottoman_government_legacy
 		prussian_monarchy_legacy
 		iqta_legacy
@@ -150,7 +141,6 @@ monarchy = {
 		indep_daimyo_legacy
 		principality_legacy
 		tsardom_legacy
-		holy_state_legacy
 	}
 
 	# Each group of exclusive reforms are mutually exclusive to each other
@@ -188,7 +178,6 @@ monarchy = {
 		revolutionary_empire_reform
 		prussian_monarchy
 		elective_monarchy
-		celestial_empire
 	}
 
 	#Flavor
@@ -288,7 +277,7 @@ republic = {
 				liberte_reform
 				egalite_reform
 				fraternite_reform
-				greater_kongo
+
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
@@ -439,7 +428,6 @@ tribal = {
 			reforms = {
 				martial_society_reform
 				civil_society_reform
-				greater_kongo
 			}
 		}
 		tribal_religion = {
@@ -461,7 +449,6 @@ tribal = {
 				tribe_becomes_monarchy_reform
 				tribe_becomes_republic_reform
 				tribe_becomes_theocracy_reform
-				tribe_becomes_horde_reform
 			}
 		}
 	}
@@ -503,14 +490,7 @@ theocracy = {
 				external_mission_reform
 				mission_to_civilize_reform
 				mission_to_kill_pirates_reform
-				greater_kongo
-				free_the_copts
-				anglo_dutch_union
-				habsburg_empire_proclaimed
-				corvinius_empire
-				swedish_empire
-				sicilian_emirate_restored
-				angevin_empire
+
 			}
 		}
 		divine_cause = {
