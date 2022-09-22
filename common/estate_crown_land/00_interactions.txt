@@ -443,7 +443,7 @@ interaction = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0
 			crown_land_share = 30
 			NOT = {
 				estate_loyalty = {
@@ -453,14 +453,14 @@ interaction = {
 			}
 			if = {
 				limit = { num_of_cities = 50 }
-				NOT = { army_size_percentage = 0.2 }
+				NOT = { army_size_percentage = 0.5 }
 			}
 			else_if = {
 				limit = { num_of_cities = 25 }
-				NOT = { army_size_percentage = 0.3 }
+				NOT = { army_size_percentage = 0.75 }
 			}
 			else = {
-				NOT = { army_size_percentage = 0.5 }
+				NOT = { army_size_percentage = 0.9 }
 			}
 			if = {
 				limit = { is_emperor = yes }
