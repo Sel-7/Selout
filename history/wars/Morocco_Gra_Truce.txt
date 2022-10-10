@@ -1,0 +1,17 @@
+name = "Morocco - Granada War"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 223
+}
+
+1440.1.1 = {
+	add_attacker = MOR
+	add_defender = GRA
+}
+
+#Peace and end of war
+1444.1.1 = {
+	rem_attacker = MOR
+	rem_defender = GRA
+}
