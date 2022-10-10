@@ -1,0 +1,215 @@
+country_event = { #Recruit Adm Advisor
+	id = selout.1
+	title = selout.1.title
+	desc = selout.1.desc
+	picture = AULIC_COUNCIL_eventPicture
+
+	is_triggered_only = yes
+
+	option {
+		name = selout.1.a
+
+		add_adm_power = -25
+		create_advisor = philosopher
+	}
+	option {
+		name = selout.1.b
+
+		add_adm_power = -25
+		create_advisor = natural_scientist
+	}
+	option {
+		name = selout.1.c
+
+		add_adm_power = -25
+		create_advisor = artist
+	}
+	option {
+		name = selout.1.d
+
+		add_adm_power = -25
+		create_advisor = treasurer
+	}
+	option {
+		name = selout.1.e
+
+		add_adm_power = -25
+		create_advisor = theologian 
+	}
+	option {
+		name = selout.1.f
+
+		add_adm_power = -25
+		create_advisor = master_of_mint
+	}
+	option {
+		name = selout.1.g
+
+		add_adm_power = -25
+		create_advisor = inquisitor
+	}
+}
+
+country_event { #Recruit Dip advisor
+	id = selout.2
+	title = selout.2.title
+	desc = selout.2.desc
+	picture = DIPLOMACY_SIGNING_eventPicture
+
+	is_triggered_only = yes
+
+	option {
+		name = selout.2.a
+
+		add_dip_power = -25
+		create_advisor = statesman
+	}
+	option {
+		name = selout.2.b
+
+		add_dip_power = -25
+		create_advisor = naval_reformer
+	}
+	option {
+		name = selout.2.c
+
+		add_dip_power = -25
+		create_advisor = trader
+	}
+	option {
+		name = selout.2.d
+
+		add_dip_power = -25
+		create_advisor = spymaster
+	}
+	option {
+		name = selout.2.e 
+
+		add_dip_power = -25
+		create_advisor = colonial_governor
+	}
+	option {
+		name = selout.2.f
+
+		add_dip_power = -25
+		create_advisor = diplomat
+	}
+	option {
+		name = selout.2.g
+
+		add_dip_power = -25
+		create_advisor = navigator
+	}
+}
+
+country_event { #Recruit Mil Advisor 
+	id = selout.3
+	title = selout.3.title
+	desc = selout.3.desc
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	is_triggered_only = yes
+
+	option {
+		name = selout.3.a
+
+		add_mil_power = -25
+		create_advisor = army_reformer
+	}
+	option {
+		name = selout.3.b
+
+		add_mil_power = -25
+		create_advisor = army_organiser
+	}
+	option {
+		name = selout.3.c
+
+		add_mil_power = -25
+		create_advisor = commandant
+	}
+	option {
+		name = selout.3.d
+
+		add_mil_power = -25
+		create_advisor = quartermaster
+	}
+	option {
+		name = selout.3.e
+
+		add_mil_power = -25
+		create_advisor = recruitmaster
+	}
+	option {
+		name = selout.3.f
+
+		add_mil_power = -25
+		create_advisor = fortification_expert
+	}
+	option {
+		name = selout.3.g
+
+		add_mil_power = -25
+		create_advisor = grand_captain
+	}
+}
+
+
+country_event = { # AI decreasing autonomy 
+    id = ai_event.1
+    title = "ai_event.EVTNAME1"
+    desc = "ai_event.EVTDESC1"
+    picture = LAND_MILITARY_eventPicture
+    
+    
+    trigger = {
+        ai = yes
+        #is_free_or_tributary_trigger = yes
+        is_at_war = no
+        is_bankrupt = no
+        num_of_cities = 10
+        manpower_percentage = 0.2
+        army_size = 15
+        NOT = { overextension_percentage = 0.1 }
+        NOT = { num_of_rebel_armies = 1 }
+        NOT = { num_of_rebel_controlled_provinces = 1 }
+        any_owned_province = {
+            OR = {
+                development = 10
+                trade_goods = gold
+            }
+            controlled_by = ROOT
+            is_island = no
+            is_state_core = ROOT
+            local_autonomy_above_min = 25
+            NOT = { 
+                has_province_modifier = autonomy_decreased
+            }
+        }
+    }
+
+    immediate = {
+        random_owned_province = {
+            limit = {
+                OR = {
+                    development = 10
+                    trade_goods = gold
+                }
+                controlled_by = ROOT
+                is_island = no
+                is_state_core = ROOT
+                local_autonomy_above_min = 25
+                NOT = { 
+                    has_province_modifier = autonomy_decreased
+                }
+            }
+            add_province_modifier = {
+                name = autonomy_decreased
+                duration = 10950
+            }
+            add_local_autonomy = -25
+        }
+    }    
+    option = {
+    }
+}
