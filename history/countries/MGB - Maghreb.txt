@@ -1,6 +1,0 @@
-government = monarchy
-add_government_reform = feudalism_reform
-technology_group = muslim
-primary_culture = moroccan
-religion = sunni
-capital = 343 #Fez
