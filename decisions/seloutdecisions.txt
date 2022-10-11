@@ -106,4 +106,31 @@ country_decisions = {
 				}
 			}
 		}
+
+		#Educate Ruler
+
+		educate_ruler = {
+			major = yes 
+			potential = {
+				ai = no
+				NOT = { has_country_flag = educate_ruler_flag }
+				NOT = { government = republic }
+			}
+			allow = {
+				ai = no
+				AND = {
+					NOT = {
+						ADM = 3
+						DIP = 3
+						MIL = 3
+					}
+				}
+			}
+			effect = {
+				change_adm = 1
+				change_dip = 1
+				change_mil = 1
+				set_country_flag = educate_ruler_flag
+			}
+		}
 	}
