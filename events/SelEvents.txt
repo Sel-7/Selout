@@ -48,6 +48,12 @@ country_event = { #Recruit Adm Advisor
 		add_adm_power = -25
 		create_advisor = inquisitor
 	}
+	option {
+		name = selout.1.h
+		hidden_effect = {
+			remove_country_modifier = sel_recruit_adm_advisor
+		}	
+	}
 }
 
 country_event { #Recruit Dip advisor
@@ -100,6 +106,14 @@ country_event { #Recruit Dip advisor
 		add_dip_power = -25
 		create_advisor = navigator
 	}
+	option {
+		name = selout.2.h
+
+		hidden_effect = {
+			remove_country_modifier = sel_recruit_dip_advisor
+		}	
+	}
+	
 }
 
 country_event { #Recruit Mil Advisor 
@@ -151,6 +165,13 @@ country_event { #Recruit Mil Advisor
 
 		add_mil_power = -25
 		create_advisor = grand_captain
+	}
+	option {
+		name = selout.3.h
+
+		hidden_effect = {
+			remove_country_modifier = sel_recruit_mil_advisor
+		}	
 	}
 }
 

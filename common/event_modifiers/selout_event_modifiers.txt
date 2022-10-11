@@ -1,0 +1,9 @@
+sel_recruit_adm_advisor = {
+	
+}
+sel_recruit_dip_advisor = {
+
+}
+sel_recruit_mil_advisor = {
+
+}

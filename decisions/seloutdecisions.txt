@@ -40,14 +40,21 @@ country_decisions = {
 			potential = {
 				is_year = 1455
 				ai = no
+				NOT = { has_country_modifier = sel_recruit_adm_advisor }
 			}
 			allow = {
 				adm_power = 50
 				ai = no
+				
 			}
 			effect = {
 				country_event = {
 					id = selout.1
+				}
+				add_country_modifier = {
+					name = "sel_recruit_adm_advisor"
+					duration = 180
+					hidden = yes
 				}
 			}
 		}
@@ -56,16 +63,23 @@ country_decisions = {
 			major = no
 			potential = {
 				is_year = 1450
-				ai = no
+				ai = no	
+				NOT = { has_country_modifier = sel_recruit_dip_advisor }
 			}
 			allow = {
 				dip_power = 50
 				ai = no
+				
 			}
 			effect = {
 				country_event = {
 					id = selout.2
 				}
+					add_country_modifier = {
+					name = "sel_recruit_dip_advisor"
+					duration = 180
+					hidden = yes
+					}
 			}
 		}
 	
@@ -74,15 +88,22 @@ country_decisions = {
 			potential = {
 				is_year = 1445
 				ai = no
+				NOT = { has_country_modifier = sel_recruit_mil_advisor }
 			}
 			allow = {
 				mil_power = 50
 				ai = no
+				
 			}
 			effect = {
 				country_event = {
 					id = selout.3
 				}
+				add_country_modifier = {
+					name = "sel_recruit_mil_advisor"
+					duration = 180
+					hidden = yes
+				}
 			}
 		}
-}
+	}
