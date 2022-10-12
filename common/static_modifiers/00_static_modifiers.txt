@@ -1769,7 +1769,7 @@ banner_regiment = {
 }
 
 streltsy_regiment = {
-    fire_damage = 0.1
+    #fire_damage = 0.1
 }
 
 cossacks_regiment = {
