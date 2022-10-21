@@ -2249,7 +2249,7 @@ estate_nobles_advisors = {
 		NOT = { has_estate_privilege = estate_rajput_advisor }
 	}
 	benefits = {
-		mil_advisor_cost = -0.25
+		mil_advisor_cost = -0.1
 	}
 	ai_will_do = {
 		factor = 9
@@ -2421,7 +2421,7 @@ estate_church_independent_inquisition = {
 		stability_cost_modifier = 0.1
 	}
 	benefits = {
-		adm_advisor_cost = -0.25
+		adm_advisor_cost = -0.1
 	}
 	ai_will_do = {
 		factor = 9
@@ -2893,7 +2893,7 @@ estate_burghers_commercial_board_of_advice = {
 		stability_cost_modifier = 0.1
 	}
 	benefits = {
-		dip_advisor_cost = -0.25
+		dip_advisor_cost = -0.1
 	}
 	ai_will_do = {
 		factor = 9
@@ -3671,7 +3671,7 @@ estate_brahmins_brahmin_leadership = {
 		stability_cost_modifier = 0.1
 	}
 	benefits = {
-		adm_advisor_cost = -0.25
+		adm_advisor_cost = -0.1
 	}
 	ai_will_do = {
 		factor = 9
@@ -4043,7 +4043,7 @@ estate_maratha_advisor = {
 		NOT = { has_estate_privilege = estate_rajput_advisor }
 	}
 	benefits = {
-		mil_advisor_cost = -0.25
+		mil_advisor_cost = -0.1
 	}
 	ai_will_do = {
 		factor = 9
@@ -4375,7 +4375,7 @@ estate_rajput_advisor = {
 		NOT = { has_estate_privilege = estate_maratha_advisor }
 	}
 	benefits = {
-		mil_advisor_cost = -0.25
+		mil_advisor_cost = -0.1
 	}
 	ai_will_do = {
 		factor = 9
@@ -4531,7 +4531,7 @@ estate_vaisyas_advisor = {
 		stability_cost_modifier = 0.1
 	}
 	benefits = {
-		dip_advisor_cost = -0.25
+		dip_advisor_cost = -0.1
 	}
 	ai_will_do = {
 		factor = 9
