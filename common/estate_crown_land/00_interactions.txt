@@ -289,6 +289,30 @@ interaction = {
 			}
 			NOT = { has_estate_privilege = estate_church_statutory_rights }
 		}
+		else_if = {
+			limit = {
+				NOT = {
+					AND = {
+						OR = {
+							has_estate_privilege = estate_nobles_nobility_primacy
+							has_estate_privilege = estate_maratha_military
+							has_estate_privilege = estate_rajput_military
+						}
+
+						OR = {
+							has_estate_privilege = estate_church_religious_state
+							has_estate_privilege = estate_brahmins_brahmin_governance
+						}
+
+						OR = {
+							has_estate_privilege = estate_burghers_land_of_commerce
+							has_estate_privilege = estate_jains_diplomacy
+						}
+				}
+
+				}
+			}
+		}
         is_at_war = no
 		if = {
 			limit = { has_government_attribute = can_not_seize_land }
@@ -364,7 +388,7 @@ interaction = {
 		}
 	}
 	ai_will_do = {
-		factor = 50
+		factor = 5000
 		modifier = {
 			factor = 0
 			# This check is needed to prevent collision with day-1 event theocracy.1
@@ -408,7 +432,7 @@ interaction = {
 			NOT = {
 				estate_loyalty = {
 					estate = all
-					loyalty = 50
+					loyalty = 30
 				}
 			}
 
@@ -422,6 +446,30 @@ interaction = {
 				}
 			}
 		}
+
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					OR = {
+						has_estate_privilege = estate_nobles_nobility_primacy
+						has_estate_privilege = estate_maratha_military
+						has_estate_privilege = estate_rajput_military
+					}
+
+					OR = {
+						has_estate_privilege = estate_church_religious_state
+						has_estate_privilege = estate_brahmins_brahmin_governance
+					}
+
+					OR = {
+						has_estate_privilege = estate_burghers_land_of_commerce
+						has_estate_privilege = estate_jains_diplomacy
+					}
+				}
+			}
+		}
+
 		modifier = {
 			factor = 0
 			crown_land_share = 30
