@@ -235,11 +235,9 @@ age_of_discovery = {
 		}
 		ab_venice_ship_trade = {
 		
-			allow = {
-				tag = VEN
-			}
 			modifier = {
-				global_ship_trade_power = 0.5
+				colonists = 1
+				range = 1
 			}
 			ai_will_do = {
 				factor = 100
