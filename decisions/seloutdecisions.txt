@@ -40,7 +40,7 @@ country_decisions = {
 			potential = {
 				is_year = 1455
 				ai = no
-				NOT = { has_country_modifier = sel_recruit_adm_advisor }
+				NOT = { has_country_modifier = so_recruit_adm_advisor }
 			}
 			allow = {
 				adm_power = 50
@@ -52,7 +52,7 @@ country_decisions = {
 					id = selout.1
 				}
 				add_country_modifier = {
-					name = "sel_recruit_adm_advisor"
+					name = "so_recruit_adm_advisor"
 					duration = 180
 					hidden = yes
 				}
@@ -113,7 +113,7 @@ country_decisions = {
 			major = yes 
 			potential = {
 				ai = no
-				NOT = { has_country_flag = educate_ruler_flag }
+				NOT = { has_country_modifier = educate_ruler_timer }
 				NOT = { government = republic }
 			}
 			allow = {
@@ -130,7 +130,10 @@ country_decisions = {
 				change_adm = 1
 				change_dip = 1
 				change_mil = 1
-				set_country_flag = educate_ruler_flag
+			add_country_modifier = {
+				name = "educate_ruler_timer"
+				duration = 36500
+			}
 			}
 		}
 	}
