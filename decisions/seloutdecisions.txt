@@ -35,7 +35,7 @@ country_decisions = {
 
 		#Advisors
 	
-		cat_recruit_admin_advisor = {
+		so_recruit_admin_advisor = {
 			major = no
 			potential = {
 				is_year = 1455
@@ -59,12 +59,12 @@ country_decisions = {
 			}
 		}
 	
-		cat_recruit_diplo_advisor = {
+		so_recruit_diplo_advisor = {
 			major = no
 			potential = {
 				is_year = 1450
 				ai = no	
-				NOT = { has_country_modifier = sel_recruit_dip_advisor }
+				NOT = { has_country_modifier = so_recruit_dip_advisor }
 			}
 			allow = {
 				dip_power = 50
@@ -76,19 +76,19 @@ country_decisions = {
 					id = selout.2
 				}
 					add_country_modifier = {
-					name = "sel_recruit_dip_advisor"
+					name = "so_recruit_dip_advisor"
 					duration = 180
 					hidden = yes
 					}
 			}
 		}
 	
-		cat_recruit_military_advisor = {
+		so_recruit_military_advisor = {
 			major = no
 			potential = {
 				is_year = 1445
 				ai = no
-				NOT = { has_country_modifier = sel_recruit_mil_advisor }
+				NOT = { has_country_modifier = so_recruit_mil_advisor }
 			}
 			allow = {
 				mil_power = 50
@@ -100,7 +100,7 @@ country_decisions = {
 					id = selout.3
 				}
 				add_country_modifier = {
-					name = "sel_recruit_mil_advisor"
+					name = "so_recruit_mil_advisor"
 					duration = 180
 					hidden = yes
 				}
