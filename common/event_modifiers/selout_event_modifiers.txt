@@ -7,3 +7,6 @@ so_recruit_dip_advisor = {
 so_recruit_mil_advisor = {
 
 }
+educate_ruler_timer = {
+	
+}
