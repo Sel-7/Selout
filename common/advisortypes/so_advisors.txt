@@ -1,0 +1,16 @@
+so_chancellor = {
+	monarch_power = ADM
+
+	#bonus
+	monthly_splendor = 2
+ 
+	skill_scaled_modifier = { meritocracy = 0.5 }
+
+	chance = {
+		factor = 1
+	}
+
+	ai_will_do = {
+		factor = 5000
+	}
+}

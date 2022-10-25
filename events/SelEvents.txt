@@ -50,6 +50,12 @@ country_event = { #Recruit Adm Advisor
 	}
 	option {
 		name = selout.1.h
+
+		add_adm_power = -25
+		create_advisor = so_chancellor
+	}
+	option {
+		name = selout.1.i
 		hidden_effect = {
 			remove_country_modifier = sel_recruit_adm_advisor
 		}	
