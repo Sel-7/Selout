@@ -152,7 +152,9 @@ can_colonize_province = {
 	}
 	allow = {
 		from = {
-			capital_scope = ROOT
+			capital_scope = {
+				colonial_region = ROOT
+			}
 		}
 	}
 }
