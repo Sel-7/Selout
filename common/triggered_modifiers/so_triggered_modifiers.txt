@@ -1,0 +1,37 @@
+so_reduced_devastion = {
+	potential = {
+		is_at_war = no
+	}
+
+	trigger = {
+		ROOT = {
+			any_owned_province = { 
+				devastation = 0.01 
+			}
+		}
+	}
+	global_monthly_devastation = -0.5
+}
+
+so_increased_prosperity = {
+	potential = {
+		ROOT = {
+			AND = {
+				is_at_war = no
+				stability = 1
+			}
+		}
+	}
+
+	trigger = {
+		ROOT = {
+			AND = {
+				all_owned_province = { 
+					NOT = { devastation = 0.01 }
+				}
+				stability = 1
+			}
+		}
+	}
+	global_prosperity_growth = 1
+}
