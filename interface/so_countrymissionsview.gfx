@@ -3,4 +3,8 @@ spriteTypes = {
 		name = "mission_english_economy"
 		texturefile = "gfx//interface//missions//mission_english_economy.dds"
 	}
+	spriteType = {
+		name = "mission_english_steel"
+		texturefile = "gfx//interface//missions//mission_english_steel.dds"
+	}
 }

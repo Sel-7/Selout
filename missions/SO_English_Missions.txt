@@ -70,6 +70,14 @@ eng_gbr_missions_1 = {
 			factor = 500
 		}
 	}
+
+	eng_gbr_secure_dominion_over_scotland = {
+		icon = 
+		position = 2 
+		required_missions = { conquer_scotland }
+
+
+	}
 }
 
 eng_gbr_missions_2 = {
@@ -239,7 +247,7 @@ eng_gbr_missions_3 = {
 				add_casus_belli = {
 					target = SCO
 					type = cb_vassalize_mission
-					months = 120
+					months = 240
 				}
 			}
 		}
@@ -334,6 +342,32 @@ eng_gbr_missions_5 = {
 			236 = {
 				add_building = workshop
 				add_base_production = 2
+			}
+		}
+	}
+
+	eng_gbr_english_steel = {
+		icon = mission_english_steel
+		position = 3
+		required_missions = {
+			eng_gbr_english_cloth
+		}
+
+		trigger = {
+			1861 = {
+				base_production = 8
+			}
+			4785 = {
+				base_production = 8
+			}
+		}
+
+		effect = {
+			1861 = {
+				add_building = workshop
+			}
+			4785 = {
+				add_building = workshop
 			}
 		}
 	}
