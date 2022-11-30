@@ -1,3 +1,6 @@
+#############
+# General
+#############
 so_reduced_devastion = {
 	potential = {
 		is_at_war = no
@@ -35,3 +38,87 @@ so_increased_prosperity = {
 	}
 	global_prosperity_growth = 1
 }
+
+so_peaceful_governance = {
+
+}
+
+#############
+# Estate Trigger
+#############
+
+so_noble_loyalty_war = {
+	potential = {
+		AND = {
+			ROOT = {
+				is_at_war = yes
+			}
+			NOT = {
+				is_year = 1550
+			}
+		}
+	}
+
+	trigger = {
+		ROOT = {
+			AND = {
+				is_at_war = yes
+				army_size_percentage = 0.6
+				land_maintenance = 1
+				estate_influence = {
+					estate = estate_nobility
+					influence = 65
+				}
+			}
+		}
+	}
+	land_maintenance_modifier = -0.05
+	nobles_loyalty_modifier = 0.15
+}
+
+so_merchants_flourishing = {
+	potential = {
+		ROOT = {
+			is_at_war = no
+		}
+	}
+
+	trigger = {
+		ROOT = {
+			AND = {
+				is_at_war = no
+				capital_scope = {
+					trade_share = {
+						country = ROOT
+						share = 40
+					}
+					estate_influence = {
+						estate = estate_burghers
+						influence = 65
+					}
+				}
+			}
+		}
+	}
+	build_cost = -0.05
+	burghers_loyalty_modifier = 0.15
+}
+
+so_devolution_of_the_church = {
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		NOT = {
+			estate_influence = {
+				estate = estate_church
+				influence = 65
+			}
+		}
+	}
+	global_tax_modifier = 0.05
+	church_influence_modifier = -0.05
+	church_loyalty_modifier = 0.15
+}
+
