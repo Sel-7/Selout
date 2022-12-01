@@ -3,7 +3,14 @@
 #############
 so_reduced_devastion = {
 	potential = {
-		is_at_war = no
+		AND = {
+			is_at_war = no
+			ROOT = {
+				any_owned_province = { 
+					devastation = 0.01 
+				}
+			}
+		}
 	}
 
 	trigger = {
@@ -18,10 +25,14 @@ so_reduced_devastion = {
 
 so_increased_prosperity = {
 	potential = {
-		ROOT = {
-			AND = {
-				is_at_war = no
-				stability = 1
+		AND = {
+			is_at_war = no
+			ROOT = {
+				NOT = {
+					any_owned_province = { 
+						devastation = 0.01 
+					}
+				}
 			}
 		}
 	}
@@ -40,7 +51,19 @@ so_increased_prosperity = {
 }
 
 so_peaceful_governance = {
+	potential = {
+		is_at_war = no
+	}
 
+	trigger = {
+		AND = {
+			ROOT = {
+				average_unrest = -3
+				average_home_autonomy = 10
+			}
+		}
+	}
+	monthly_reform_progress_modifier = 0.05
 }
 
 #############
@@ -119,6 +142,6 @@ so_devolution_of_the_church = {
 	}
 	global_tax_modifier = 0.05
 	church_influence_modifier = -0.05
-	church_loyalty_modifier = 0.15
+
 }
 
