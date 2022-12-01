@@ -142,6 +142,5 @@ so_devolution_of_the_church = {
 	}
 	global_tax_modifier = 0.05
 	church_influence_modifier = -0.05
-
 }
 
