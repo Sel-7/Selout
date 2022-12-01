@@ -57,7 +57,7 @@ country_event = { #Recruit Adm Advisor
 	option {
 		name = selout.1.i
 		hidden_effect = {
-			remove_country_modifier = sel_recruit_adm_advisor
+			remove_country_modifier = so_recruit_adm_advisor
 		}	
 	}
 }
@@ -116,7 +116,7 @@ country_event { #Recruit Dip advisor
 		name = selout.2.h
 
 		hidden_effect = {
-			remove_country_modifier = sel_recruit_dip_advisor
+			remove_country_modifier = so_recruit_dip_advisor
 		}	
 	}
 	
@@ -176,7 +176,7 @@ country_event { #Recruit Mil Advisor
 		name = selout.3.h
 
 		hidden_effect = {
-			remove_country_modifier = sel_recruit_mil_advisor
+			remove_country_modifier = so_recruit_mil_advisor
 		}	
 	}
 }
