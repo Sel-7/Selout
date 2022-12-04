@@ -711,12 +711,13 @@ war = {
 }
 
 peace = {
-	war_exhaustion = -0.1
+	war_exhaustion = -0.2
 	monthly_fervor_increase = 1
 	global_autonomy = -0.1
 	global_institution_spread = 0.1
 	rr_girondists_influence = -0.1
 	pr_smugglers_influence = 0.1
+	global_supply_limit_modifier = 1.5
 }
 
 unconditional_surrender = {
@@ -742,6 +743,7 @@ war_exhaustion = {
 	sailors_recovery_speed = -0.01
 	siege_ability = -0.01
 	global_trade_goods_size_modifier = -0.02
+	land_maintenance_modifier = 0.005
 }
 
 doom = {
@@ -827,14 +829,14 @@ negative_piety = { #As of 1.23 Mysticism
 defender_of_faith = {
 	land_morale = 0.05
 	naval_morale = 0.05
-	technology_cost = 0.05
+	#technology_cost = 0.05
 	war_exhaustion = -0.025					#quicker recovery
-	papal_influence = 1
-	church_power_modifier = 0.1
-	monthly_fervor_increase = 1
+	#papal_influence = 1
+	#church_power_modifier = 0.1
+	#monthly_fervor_increase = 1
 	prestige = 1							#1% extra prestige yearly
 	missionaries = 1
-	devotion = 0.5
+	#devotion = 0.5
 }
 
 defender_of_faith_refused_cta = {
