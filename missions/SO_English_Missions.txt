@@ -64,7 +64,7 @@ eng_gbr_missions_1 = {
 			define_advisor = {
 				type = theologian
 				culture = english
-				skill = 3
+				skill = 2
 				cost_multiplier = 0.75
 			}
 
@@ -80,29 +80,58 @@ eng_gbr_missions_1 = {
 		required_missions = { conquer_scotland }
 
 		trigger = {
-			lowlands_area = {
-				type = all
-				owned_by = ROOT
-				local_autonomy = 0
+			if = {
+				limit = { 
+					SCO = {
+						OR = {
+							is_subject_of = ENG
+							is_subject_of = GBR
+						}
+					} 
+				}
+				SCO = {
+					has_opinion = {
+						who = ROOT 
+						value = 150
+					}
+					NOT = { liberty_desire = 25 }
+				}
 			}
-			highlands_area = {
-				type = all
-				owned_by = ROOT
-				unrest = 0
-				local_autonomy = 0
-			}
-			kingdom_of_the_isles_area = {
-				type = all
-				owned_by = ROOT
-				unrest = 0
-				local_autonomy = 0
+			else = {
+				lowlands_area = {
+					type = all
+					owned_by = ROOT
+					unrest = 5
+					local_autonomy = 5
+				}
+				highlands_area = {
+					type = all
+					owned_by = ROOT
+					unrest = 5
+					unrest = 5
+					local_autonomy = 5
+				}
+				kingdom_of_the_isles_area = {
+					type = all
+					owned_by = ROOT
+					unrest = 5
+					local_autonomy = 5
+				}
 			}
 		}
 
 		effect = {
-			add_years_of_income = 0.5
-			add_mercantalism = 15
-			change_government_reform_progress = 50
+			ROOT = {
+				add_years_of_income = 0.5
+				change_government_reform_progress = 50
+				add_mercantilism = 10
+			}
+			define_advisor = {
+				type = trader
+				culture = english
+				skill = 1
+				cost_multiplier = 0.9
+			}
 		}
 
 	}
@@ -344,25 +373,16 @@ eng_gbr_missions_5 = {
 		
 		trigger = {
 			236 = {
-				base_production = 10
+				base_production = 12
 			}
 			235 = {
-				base_production = 10
+				base_production = 12
 			}
 			238 = {
-				base_production = 10
-			}
-			4370 = {
-				base_production = 10
-			}
-			4376 = {
-				base_production = 10
-			}
-			243 = {
-				base_production = 10
+				base_production = 12
 			}
 			245 = {
-				base_production = 10
+				base_production = 12
 			}
 		}
 
@@ -371,8 +391,16 @@ eng_gbr_missions_5 = {
 				add_building = workshop
 				add_base_production = 2
 			}
+			4376 = {
+				change_trade_goods = cloth
+				add_base_production = 2
+			}
+			4370 = {
+				change_trade_goods = cloth
+				add_base_production = 2
+			}
+			}
 		}
-	}
 
 	eng_gbr_english_steel = {
 		icon = mission_english_steel
@@ -383,10 +411,10 @@ eng_gbr_missions_5 = {
 
 		trigger = {
 			1861 = {
-				base_production = 8
+				base_production = 12
 			}
 			4785 = {
-				base_production = 8
+				base_production = 12
 			}
 		}
 
@@ -396,6 +424,10 @@ eng_gbr_missions_5 = {
 			}
 			4785 = {
 				add_building = workshop
+			}
+			4373 = {
+				change_trade_goods = iron
+				add_base_production = 2
 			}
 		}
 	}
