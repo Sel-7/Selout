@@ -858,7 +858,7 @@ country_event = {
 					culture_group = french
 					any_neighbor_province = {
 						owned_by = FRA
-					}war
+					}
 				}
 			}
 			add_opinion = {
@@ -1678,10 +1678,10 @@ country_event = {
 		tag = ENG
 		is_subject = no
 		exists = FRA
-	#	NOT = { alliance_with = FRA }
-	#	NOT = { war_with = FRA }
-	#	NOT = { is_year = 1450 }
-	#	NOT = { truce_with = FRA }
+		NOT = { alliance_with = FRA }
+		NOT = { war_with = FRA }
+		NOT = { is_year = 1450 }
+		NOT = { truce_with = FRA }
 		177 = {
 			OR = {
 				owned_by = ENG
@@ -1697,7 +1697,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 2
+		months = 1
 	}
 
 	option = {
@@ -1708,7 +1708,6 @@ country_event = {
 		tooltip = {
 			177 = {
 				cede_province = FRA
-				add_core = FRA
 			}
 			167 = {
 				cede_province = FRA
@@ -1722,7 +1721,7 @@ country_event = {
 				cede_province = FRA
 				add_core = FRA
 			}
-			4835 = {
+			4385 = {
 				cede_province = FRA
 				add_core = FRA
 			}
@@ -1736,8 +1735,27 @@ country_event = {
 			}
 			add_truce_with = FRA
 		}
-		#FRA = { country_event = { id = flavor_fra.8 } }
+		FRA = { country_event = { id = flavor_fra.8 } }
+		#add_prestige = -10
+		#add_stability = -1
+		set_country_flag = rb_gave_up_maine
 	}
+	#option = {
+	#	name = "flavor_fra.6.b"
+	#	ai_chance = {
+	#		factor = 75
+	#		modifier = {
+	#			factor = 0
+	#			is_at_war = yes
+	#		}
+	#		modifier = {
+	#			factor = 0
+	#			has_any_disaster = yes
+	#		}
+	#	}
+	#	custom_tooltip = flavor_fra.6.a.tt
+	#	FRA = { country_event = { id = flavor_fra.7 } }
+	#}
 }
 
 # The Surrender of Maine
@@ -1806,31 +1824,55 @@ country_event = {
 }
 
 # The Surrender of Maine
-#country_event = {
-#	id = flavor_fra.8
-#	title = "flavor_fra.8.t"
-#	desc = "flavor_fra.8.d"
-#	picture = SIEGE_eventPicture
-#	
-#	is_triggered_only = yes
-#	
-#	major = yes
-#
-#	option = {
-#		name = "flavor_fra.8.a" #
-#		add_prestige = 10
-#		hidden_effect = {
-#			FROM = {
-#				add_truce_with = ROOT
-#			}
-#		}
-#		add_truce_with = FROM
-#		177 = {
-#			cede_province = FRA
-#			hidden_effect = { add_local_autonomy = -50 }
-#		}
-#	}
-#}
+country_event = {
+	id = flavor_fra.8
+	title = "flavor_fra.8.t"
+	desc = "flavor_fra.8.d"
+	picture = SIEGE_eventPicture
+	
+	is_triggered_only = yes
+	
+	major = yes
+
+	option = {
+		name = "flavor_fra.8.a" #
+		add_prestige = 10
+		hidden_effect = {
+			FROM = {
+				add_truce_with = ROOT
+			}
+		}
+		add_truce_with = FROM
+		177 = {
+			cede_province = FRA
+			add_core = FRA
+		}
+		167 = {
+			cede_province = FRA
+			add_core = FRA
+		}
+		168 = {
+			cede_province = FRA
+			add_core = FRA
+		}
+		1879 = {
+			cede_province = FRA
+			add_core = FRA
+		}
+		4385 = {
+			cede_province = FRA
+			add_core = FRA
+		}
+		174 = {
+			cede_province = FRA
+			add_core = FRA
+		}
+		173 = {
+			cede_province = FRA
+			add_core = FRA
+		}
+	}
+}
 
 # François Villon
 country_event = {
