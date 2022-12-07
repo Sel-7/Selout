@@ -30,8 +30,8 @@ aristocracy_ideas = {
 	}
 	
 	noble_knights = {
-		cavalry_power = 0.15
-		cavalry_cost = -0.20
+		cavalry_power = 0.1
+		cavalry_cost = -0.05
 	}
 	military_traditions = {
 		mil_tech_cost_modifier  = -0.1
@@ -342,10 +342,10 @@ quality_ideas = {
 		discipline = 0.025
 	}
 	naval_drill = {
-		naval_morale = 0.10
+		drill_decay_modifier = -0.25
 	}
 	copper_bottoms = {
-		naval_attrition = -0.25
+		drill_gain_modifier = 0.25
 	}
 	massed_battery = {
 		artillery_power = 0.1
@@ -575,6 +575,49 @@ influence_ideas = {
 		modifier = {
 			factor = 1.7
 			vassal = 2
+		}
+	}
+}
+
+secularist_ideas = {
+	category = DIP
+
+	bonus = {
+		idea_cost = -0.1
+		yearly_harmony = 0.25  # Used if religion uses harmony (confucianism)
+		brahmins_muslim_loyalty_modifier = 0.1
+		dhimmi_loyalty_modifier = 0.1
+	}
+
+	tolerance_idea = {
+		religious_unity = 0.25
+	}
+	local_traditions = {
+		manpower_in_accepted_culture_provinces  = 0.1
+	}
+	ecumenism = {
+		tolerance_heretic = 2
+		tolerance_heathen = 2
+	}
+	indirect_rule = {
+		years_of_nationalism = -10
+	}
+	cultural_ties = {
+		num_accepted_cultures = 2
+	}
+	benevolence = {
+		possible_adm_policy = 1
+		free_adm_policy = 1
+	}
+	humanist_tolerance = {
+		all_power_cost = -0.025
+	}
+
+	ai_will_do = {
+		factor = 0.9
+		modifier = {
+			factor = 0
+			has_idea_group = religious_ideas
 		}
 	}
 }
@@ -859,48 +902,45 @@ administrative_ideas = {
 	}
 }
 
-humanist_ideas = {
-	category = ADM
-
-	bonus = {
-		idea_cost = -0.1
-		yearly_harmony = 0.25  # Used if religion uses harmony (confucianism)
-		brahmins_muslim_loyalty_modifier = 0.1
-		dhimmi_loyalty_modifier = 0.1
-	}
-
-	tolerance_idea = {
-		religious_unity = 0.25
-	}
-	local_traditions = {
-		manpower_in_accepted_culture_provinces  = 0.1
-	}
-	ecumenism = {
-		tolerance_heretic = 2
-		tolerance_heathen = 2
-	}
-	indirect_rule = {
-		years_of_nationalism = -10
-	}
-	cultural_ties = {
-		num_accepted_cultures = 2
-	}
-	benevolence = {
-		possible_adm_policy = 1
-		free_adm_policy = 1
-	}
-	humanist_tolerance = {
-		all_power_cost = -0.025
-	}
-
-	ai_will_do = {
-		factor = 0.9
-		modifier = {
-			factor = 0
-			has_idea_group = religious_ideas
-		}
-	}
-}
-
-
-
+#humanist_ideas = {
+#	category = ADM
+#
+#	bonus = {
+#		idea_cost = -0.1
+#		yearly_harmony = 0.25  # Used if religion uses harmony (confucianism)
+#		brahmins_muslim_loyalty_modifier = 0.1
+#		dhimmi_loyalty_modifier = 0.1
+#	}
+#
+#	tolerance_idea = {
+#		religious_unity = 0.25
+#	}
+#	local_traditions = {
+#		manpower_in_accepted_culture_provinces  = 0.1
+#	}
+#	ecumenism = {
+#		tolerance_heretic = 2
+#		tolerance_heathen = 2
+#	}
+#	indirect_rule = {
+#		years_of_nationalism = -10
+#	}
+#	cultural_ties = {
+#		num_accepted_cultures = 2
+#	}
+#	benevolence = {
+#		possible_adm_policy = 1
+#		free_adm_policy = 1
+#	}
+#	humanist_tolerance = {
+#		all_power_cost = -0.025
+#	}
+#
+#	ai_will_do = {
+#		factor = 0.9
+#		modifier = {
+#			factor = 0
+#			has_idea_group = religious_ideas
+#		}
+#	}
+#}
