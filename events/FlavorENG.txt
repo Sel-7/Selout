@@ -2935,4 +2935,36 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = flavor_eng.9812
+	title = flavor_eng.9812.t
+	desc = flavor_eng.9812.d
+	picture = ECONOMY_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = GBR
+			was_tag = ENG
+			was_tag = GBR
+		}
+	}
+
+	option = {
+		name = flavor_eng.9812.a
+		4373 = {
+			change_trade_goods = iron
+			add_province_modifier = {
+				name = great_rock_mine
+				duration = 18250
+				desc = great_rock_mine_tooltip
+			}
+		}
+	}
+
+
+}
 	

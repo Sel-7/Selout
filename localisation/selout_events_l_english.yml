@@ -1,4 +1,7 @@
 ﻿l_english:
+####################
+#Recruit Advisors   
+####################
 selout.1.title:0 "Recruit Administrative Advisor"
 selout.1.desc:0 "Recruit Administrative Advisor"
 selout.1.a:0 "Recruit Philosopher"
@@ -30,3 +33,11 @@ selout.3.e:0 "Recruit Recruitmaster"
 selout.3.f:0 "Recruit Fortifcation Expert"
 selout.3.g:0 "Recruit Grand Captain"
 selout.3.h:0 "£no£ Don't Recruit Anyone"
+
+####################
+#English Missions   
+####################
+
+flavor_eng.9812.t:0 "Iron Mines of Devon"
+flavor_eng.9812.d:0 "A new Iron mine was discovered in Devon which contains vast amounts of Iron."
+flavor_eng.9812.a:0 "Invest in Iron"

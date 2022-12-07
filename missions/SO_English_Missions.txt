@@ -373,16 +373,28 @@ eng_gbr_missions_5 = {
 		
 		trigger = {
 			236 = {
-				base_production = 12
+				AND = {
+					base_production = 12
+					owned_by = ROOT
+				}
 			}
 			235 = {
-				base_production = 12
+				AND = {
+					base_production = 12
+					owned_by = ROOT
+				}
 			}
 			238 = {
-				base_production = 12
+				AND = {
+					base_production = 12
+					owned_by = ROOT
+				}
 			}
 			245 = {
-				base_production = 12
+				AND = {
+					base_production = 12
+					owned_by = ROOT
+				}
 			}
 		}
 
@@ -399,8 +411,8 @@ eng_gbr_missions_5 = {
 				change_trade_goods = cloth
 				add_base_production = 2
 			}
-			}
 		}
+	}
 
 	eng_gbr_english_steel = {
 		icon = mission_english_steel
@@ -411,10 +423,16 @@ eng_gbr_missions_5 = {
 
 		trigger = {
 			1861 = {
-				base_production = 12
+				AND = {
+					base_production = 12
+					owned_by = ROOT
+				}
 			}
 			4785 = {
-				base_production = 12
+				AND = {
+					base_production = 12
+					owned_by = ROOT
+				}
 			}
 		}
 
@@ -425,9 +443,8 @@ eng_gbr_missions_5 = {
 			4785 = {
 				add_building = workshop
 			}
-			4373 = {
-				change_trade_goods = iron
-				add_base_production = 2
+			country_event = {
+				id = flavor_eng.9812
 			}
 		}
 	}
