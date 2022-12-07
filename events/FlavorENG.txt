@@ -248,17 +248,17 @@ country_event = {
 			}
 		}
 	}
-	option = {		# We will never give this up!
-		name = "flavor_eng.EVTOPTB9104"
-		ai_chance = { factor = 20 }
-		add_stability = -1
-		FRA = {
-			add_opinion = {
-				who = ROOT
-				modifier = eng_refuse_to_give_up_france
-			}
-		}
-	}
+	#option = {		# We will never give this up!
+	#	name = "flavor_eng.EVTOPTB9104"
+	#	ai_chance = { factor = 20 }
+	#	add_stability = -1
+	#	FRA = {
+	#		add_opinion = {
+	#			who = ROOT
+	#			modifier = eng_refuse_to_give_up_france
+	#		}
+	#	}
+	#}
 }
 
 # The Justices of Peace
