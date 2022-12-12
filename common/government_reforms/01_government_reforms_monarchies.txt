@@ -2568,6 +2568,11 @@ enforce_privileges_reform = {
 			NOT = { max_manpower = 12 }
 		}
 	}
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
+	}
 }
 
 quash_noble_power_reform = {
@@ -2588,6 +2593,11 @@ quash_noble_power_reform = {
 			factor = 1.5
 			is_in_deficit = yes
 		}
+	}
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
 	}
 }
 
@@ -2621,6 +2631,11 @@ grant_noble_castle_rights_reform = {
 			}
 		}
 	}
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
+	}
 }
 
 maintain_nobles_status_quo_reform = {
@@ -2637,6 +2652,11 @@ maintain_nobles_status_quo_reform = {
 	}
 	ai = {
 		factor = 1
+	}
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
 	}
 }
 
@@ -2658,6 +2678,11 @@ grant_military_command_reform = {
 	}
 	ai = {
 		factor = 1
+	}
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
 	}
 }
 
@@ -2714,6 +2739,11 @@ grant_nobles_electorate_reform = {
 	ai = {
 		factor = 1
 	}
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
+	}
 }
 
 blackmail_nobility_reform = {
@@ -2740,6 +2770,11 @@ blackmail_nobility_reform = {
 	}
 	ai = {
 		factor = 0
+	}
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
 	}
 }
 
@@ -2775,6 +2810,11 @@ enforce_trader_privileges_reform = {
 			}
 		}
 	}
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
+	}
 }
 
 bengali_reform = {
@@ -2792,6 +2832,11 @@ bengali_reform = {
 	ai = {
 		factor = 5
 	}
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
+	}
 }
 
 sufi_syncretism_reform = {
@@ -2808,6 +2853,11 @@ sufi_syncretism_reform = {
 	}
 	ai = {
 		factor = 3
+	}
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
 	}
 }
 
@@ -2830,6 +2880,11 @@ poligar_reform = {
 	ai = {
 		factor = 3
 	}
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
+	}
 }
 
 khalsa_reform = {
@@ -2846,6 +2901,11 @@ khalsa_reform = {
 	}
 	ai = {
 		factor = 5
+	}
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
 	}
 }
 
@@ -2867,6 +2927,11 @@ deccani_society_reform = {
 	}
 	ai = {
 		factor = 3
+	}
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
 	}
 }
 
@@ -2890,6 +2955,11 @@ black_army_reform = {
 	}
 	ai = {
 		factor = 3
+	}
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
 	}
 }
 
@@ -2920,6 +2990,11 @@ legion_of_honor_reform = {
 	ai = {
 		factor = 2.5
 	}
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
+	}
 }
 
 imperial_nobility_reform = {
@@ -2939,6 +3014,11 @@ imperial_nobility_reform = {
 	}
 	ai = {
 		factor = 2.5
+	}
+	conditional = {
+		allow = {
+		}
+		claim_states = yes
 	}
 }
 

@@ -1,12 +1,14 @@
 -- NDiplomacy
 
 NDefines.NDiplomacy.DEMAND_UNLAWFUL_TERRITORY_DESIRE_AE_MODIFIER = 0
-NDefines.NDiplomacy.SPY_NETWORK_AE_EFFECT = -0.2
+NDefines.NDiplomacy.SPY_NETWORK_AE_EFFECT = -0.25
 NDefines.NDiplomacy.AE_SAME_CULTURE = 0.4
 NDefines.NDiplomacy.AE_SAME_RELIGION = 0.4
 NDefines.NDiplomacy.AE_HRE_INTERNAL = 0.5
 NDefines.NDiplomacy.INTEGRATE_UNION_MIN_YEARS = 10
 NDefines.NDiplomacy.MONTHS_BEFORE_TOTAL_OCCUPATION = 12
+NDefines.NDiplomacy.FABRICATE_CLAIM_COST = 10
+NDefines.NDiplomacy.FABRICATE_CLAIM_COST_MODIFIER_PER_CLAIM = 0.2
 
 -- NCountry
 
@@ -21,7 +23,7 @@ NDefines.NCountry.ESTATE_MIN_DISTRIBUTED_CROWNLAND = 30.5
 -- NEconomy
 
 NDefines.NEconomy.CARAVAN_FACTOR = 6.0
-NDefines.NEconomy.CARAVAN_POWER_MAX = 20
+NDefines.NEconomy.CARAVAN_POWER_MAX = 15
 
 -- NMilitary
 
