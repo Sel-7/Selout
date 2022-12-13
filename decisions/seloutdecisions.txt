@@ -137,4 +137,84 @@ country_decisions = {
 			}
 			}
 		}
+
+		#Recruit Gen/Conq/Explo/Colonists
+
+		so_recruit_general = {
+			potenital = {
+				ai = no
+			}
+			allow = {
+				ai = no
+			}
+
+			effect = {
+				create_general = { tradition = 30 }
+				add_years_of_income = -0.1
+				add_country_modifier = {
+					name = so_recruited_general
+					duration = 180
+					hidden = yes
+				}
+			}
+		}
+
+		so_recruit_conquistador = {
+			potenital = {
+				ai = no
+			}
+			allow = {
+				ai = no
+			}
+
+			effect = {
+				create_conquistador = { tradition = 30 }
+				add_years_of_income = -0.1
+				add_country_modifier = {
+					name = so_recruited_conquistador
+					duration = 180
+					hidden = yes
+				}
+			}
+		}
+
+		so_recruit_explorer = {
+			potenital = {
+				ai = no
+			}
+			allow = {
+				ai = no
+			}
+
+			effect = {
+				create_explorer = { tradition = 30 }
+				add_years_of_income = -0.1
+				add_country_modifier = {
+					name = so_recruited_explorer
+					duration = 180
+					hidden = yes
+				}
+			}
+		}
+
+		so_recruit_colonist = {
+			potenital = {
+				ai = no
+				has_age_ability = ab_venice_ship_trade
+				NOT = {
+					had_country_flag = so_recruited_colonist
+				}
+			}
+			allow = {
+				ai = no
+				NOT = {
+					had_country_flag = so_recruited_colonist
+				}
+			}
+
+			effect = {
+				colonists = 2
+				set_country_flag = so_recruited_colonist
+			}
+		}
 	}

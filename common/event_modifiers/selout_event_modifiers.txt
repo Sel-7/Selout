@@ -11,6 +11,18 @@ educate_ruler_timer = {
 	
 }
 
+so_recruited_general = {
+
+}
+
+so_recruited_conquistador = {
+	
+}
+
+so_recruited_explorer = {
+
+}
+
 great_rock_mine = {
 	trade_goods_size = 0.5
 }
