@@ -1,15 +1,31 @@
 ﻿l_english:
+
+#Critical Events
 PR_critical_events_title:0 "Remaining Critical Events"
 PR_critical_events_desc:0 ""
 PR_radical_reform_decision:0 "Radical Reforms"
 PR_military_reform_decision:0 "Military Reforms"
 PR_commandant_decision:0 "Inspirational Leader"
 PR_grand_captain_decision:0 "Grand Captain"
+
+#Recruit Advisor
 so_recruit_admin_advisor_title:0 "£adm£ Recruit Admin Advisor"
 so_recruit_admin_advisor_desc:0 ""
 so_recruit_diplo_advisor_title:0 "£dip£ Recruit Diplo Advisor"
 so_recruit_diplo_advisor_desc:0 ""
 so_recruit_military_advisor_title:0 "£mil£ Recruit Military Advisor"
 so_recruit_military_advisor_desc:0 ""
+
+#Educate Ruler
 educate_ruler_title:0 "Educate Ruler"
 educate_ruler_desc:0 ""
+
+#Recruit Gen/Conq/Explo/Colonists
+so_recruit_general_title:0 "Recruit General"
+so_recruit_general_desc:0 " "
+so_recruit_conquistador_title:0 "Recruit Conquistador"
+so_recruit_conquistador_desc:0 ""
+so_recruit_explorer_title:0 "Recruit Explorer"
+so_recruit_explorer_desc:0 " "
+so_recruit_colonist_title:0 "Recruit Colonists"
+so_recruit_colonist_desc:0 "Permanent Colonists"

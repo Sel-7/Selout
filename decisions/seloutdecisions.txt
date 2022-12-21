@@ -33,188 +33,215 @@ country_decisions = {
 		}
 	}
 
-		#Advisors
-	
-		so_recruit_admin_advisor = {
-			major = no
-			potential = {
-				is_year = 1455
-				ai = no
-				NOT = { has_country_modifier = so_recruit_adm_advisor }
-			}
-			allow = {
-				adm_power = 50
-				ai = no
-				
-			}
-			effect = {
-				country_event = {
-					id = selout.1
-				}
-				add_country_modifier = {
-					name = "so_recruit_adm_advisor"
-					duration = 180
-					hidden = yes
-				}
-			}
-		}
-	
-		so_recruit_diplo_advisor = {
-			major = no
-			potential = {
-				is_year = 1450
-				ai = no	
-				NOT = { has_country_modifier = so_recruit_dip_advisor }
-			}
-			allow = {
-				dip_power = 50
-				ai = no
-				
-			}
-			effect = {
-				country_event = {
-					id = selout.2
-				}
-					add_country_modifier = {
-					name = "so_recruit_dip_advisor"
-					duration = 180
-					hidden = yes
-					}
-			}
-		}
-	
-		so_recruit_military_advisor = {
-			major = no
-			potential = {
-				is_year = 1445
-				ai = no
-				NOT = { has_country_modifier = so_recruit_mil_advisor }
-			}
-			allow = {
-				mil_power = 50
-				ai = no
-				
-			}
-			effect = {
-				country_event = {
-					id = selout.3
-				}
-				add_country_modifier = {
-					name = "so_recruit_mil_advisor"
-					duration = 180
-					hidden = yes
-				}
-			}
-		}
+	#Advisors
 
-		#Educate Ruler
-
-		educate_ruler = {
-			major = yes 
-			potential = {
-				ai = no
-				NOT = { has_country_modifier = educate_ruler_timer }
-				NOT = { government = republic }
+	so_recruit_admin_advisor = {
+		major = no
+		potential = {
+			is_year = 1455
+			ai = no
+			NOT = { has_country_modifier = so_recruit_adm_advisor }
+		}
+		allow = {
+			adm_power = 50
+			ai = no
+			
+		}
+		effect = {
+			country_event = {
+				id = selout.1
 			}
-			allow = {
-				ai = no
-				AND = {
-					NOT = {
-						ADM = 3
-						DIP = 3
-						MIL = 3
-					}
-				}
-			}
-			effect = {
-				change_adm = 1
-				change_dip = 1
-				change_mil = 1
 			add_country_modifier = {
-				name = "educate_ruler_timer"
-				duration = 36500
+				name = "so_recruit_adm_advisor"
+				duration = 180
 				hidden = yes
 			}
+		}
+	}
+
+	so_recruit_diplo_advisor = {
+		major = no
+		potential = {
+			is_year = 1450
+			ai = no	
+			NOT = { has_country_modifier = so_recruit_dip_advisor }
+		}
+		allow = {
+			dip_power = 50
+			ai = no
+			
+		}
+		effect = {
+			country_event = {
+				id = selout.2
+			}
+				add_country_modifier = {
+				name = "so_recruit_dip_advisor"
+				duration = 180
+				hidden = yes
+				}
+		}
+	}
+
+	so_recruit_military_advisor = {
+		major = no
+		potential = {
+			is_year = 1445
+			ai = no
+			NOT = { has_country_modifier = so_recruit_mil_advisor }
+		}
+		allow = {
+			mil_power = 50
+			ai = no
+			
+		}
+		effect = {
+			country_event = {
+				id = selout.3
+			}
+			add_country_modifier = {
+				name = "so_recruit_mil_advisor"
+				duration = 180
+				hidden = yes
 			}
 		}
+	}
 
-		#Recruit Gen/Conq/Explo/Colonists
+	#Educate Ruler
 
-		so_recruit_general = {
-			potenital = {
-				ai = no
-			}
-			allow = {
-				ai = no
-			}
-
-			effect = {
-				create_general = { tradition = 30 }
-				add_years_of_income = -0.1
-				add_country_modifier = {
-					name = so_recruited_general
-					duration = 180
-					hidden = yes
+	educate_ruler = {
+		major = yes 
+		potential = {
+			ai = no
+			NOT = { has_country_modifier = educate_ruler_timer }
+			NOT = { government = republic }
+		}
+		allow = {
+			ai = no
+			AND = {
+				NOT = {
+					ADM = 3
+					DIP = 3
+					MIL = 3
 				}
 			}
 		}
+		effect = {
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+		add_country_modifier = {
+			name = "educate_ruler_timer"
+			duration = 36500
+			hidden = yes
+		}
+		}
+	}
 
-		so_recruit_conquistador = {
-			potenital = {
-				ai = no
-			}
-			allow = {
-				ai = no
-			}
+	#Recruit Gen/Conq/Explo/Colonists
 
-			effect = {
-				create_conquistador = { tradition = 30 }
-				add_years_of_income = -0.1
-				add_country_modifier = {
-					name = so_recruited_conquistador
-					duration = 180
-					hidden = yes
-				}
+	so_recruit_general = {
+		potenital = {
+			ai = no
+			NOT = { 
+				has_country_modifier = so_recruited_general
+			}
+		}
+		allow = {
+			ai = no
+			NOT = { 
+				has_country_modifier = so_recruited_general
 			}
 		}
 
-		so_recruit_explorer = {
-			potenital = {
-				ai = no
+		effect = {
+			create_general = { tradition = 30 }
+			add_years_of_income = -0.1
+			add_country_modifier = {
+				name = so_recruited_general
+				duration = 360
+				hidden = yes
 			}
-			allow = {
-				ai = no
-			}
+		}
+	}
 
-			effect = {
-				create_explorer = { tradition = 30 }
-				add_years_of_income = -0.1
-				add_country_modifier = {
-					name = so_recruited_explorer
-					duration = 180
-					hidden = yes
-				}
+	so_recruit_conquistador = {
+		potenital = {
+			ai = no
+			NOT = { 
+				has_country_modifier = so_recruited_conquistador
+			}
+		}
+		allow = {
+			ai = no
+			NOT = { 
+				has_country_modifier = so_recruited_conquistador
 			}
 		}
 
-		so_recruit_colonist = {
-			potenital = {
+		effect = {
+			create_conquistador = { tradition = 30 }
+			add_years_of_income = -0.1
+			add_country_modifier = {
+				name = so_recruited_conquistador
+				duration = 360
+				hidden = yes
+			}
+		}
+	}
+
+	so_recruit_explorer = {
+		potenital = {
+			ai = no
+			NOT = { 
+				has_country_modifier = so_recruited_explorer
+			}
+		}
+		allow = {
+			ai = no
+			NOT = { 
+				has_country_modifier = so_recruited_explorer
+			}
+		}
+
+		effect = {
+			create_explorer = { tradition = 30 }
+			add_years_of_income = -0.1
+			add_country_modifier = {
+				name = so_recruited_explorer
+				duration = 360
+				hidden = yes
+			}
+		}
+	}
+
+	so_recruit_colonist = {
+		potenital = {
+			AND = {
 				ai = no
 				has_age_ability = ab_venice_ship_trade
 				NOT = {
 					had_country_flag = so_recruited_colonist
 				}
 			}
-			allow = {
+		}
+		allow = {
+			AND = {
 				ai = no
+				has_age_ability = ab_venice_ship_trade
 				NOT = {
-					had_country_flag = so_recruited_colonist
+					has_country_modifier = so_recruited_colonist
 				}
 			}
+		}
 
-			effect = {
-				colonists = 2
-				set_country_flag = so_recruited_colonist
+		effect = {
+			add_country_modifier = {
+				name = so_recruited_colonist
+				duration = -1
+				hidden = yes
 			}
+			add_years_of_income = -0.2
 		}
 	}
+}
