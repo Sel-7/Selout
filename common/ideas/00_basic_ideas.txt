@@ -55,16 +55,6 @@ aristocracy_ideas = {
 	noble_resilience = {
 		mercenary_manpower = 0.25
 	}
-	
-
-	ai_will_do = {
-		factor = 0.45
-		
-		modifier = {
-			factor = 0.5
-			is_subject = yes
-		}	
-	}
 }
 
 
@@ -108,10 +98,6 @@ plutocracy_ideas = {
 	}
 	emancipation = {
 		manpower_recovery_speed = 0.2
-	}
-
-	ai_will_do = {
-		factor = 0.4
 	}
 }
 
@@ -202,13 +188,6 @@ theocracy_gov_ideas = {
 	martyrs = {
 		manpower_in_true_faith_provinces = 0.20
 	}
-	ai_will_do = {
-		factor = 0.9
-		modifier = {
-			factor = 0
-			has_idea_group = humanist_ideas
-		}
-	}
 }
 
 #indigenous_ideas = {
@@ -279,10 +258,6 @@ offensive_ideas = {
 	napoleonic_warfare = {
 		discipline = 0.05
 	}
-
-	ai_will_do = {
-		factor = 0.94
-	}
 }
 
 
@@ -315,10 +290,6 @@ defensive_ideas = {
 	}
 	improved_foraging = {
 		land_attrition = -0.25
-	}
-
-	ai_will_do = {
-		factor = 0.77
 	}
 }
 
@@ -384,10 +355,6 @@ quantity_ideas = {
 	expanded_supply_trains = {
 		land_attrition = -0.1
 	}
-
-	ai_will_do = {
-		factor = 1.0
-	}
 }
 
 ####################
@@ -435,10 +402,6 @@ spy_ideas = {
 		monthly_favor_modifier = 0.33
 		accept_vassalization_reasons = 15
 	}
-
-	ai_will_do = {
-		factor = 0.75
-	}
 }
 
 
@@ -468,19 +431,6 @@ diplomatic_ideas = {
 	}
 	diplomatic_corps = {
 		dip_tech_cost_modifier = -0.1
-	}
-
-	ai_will_do = {
-		factor = 0.67
-
-		modifier = {
-			factor = 2
-			is_emperor = yes
-		}
-		modifier = {
-			factor = 1.5
-			vassal = 2
-		}
 	}
 }
 
@@ -516,19 +466,6 @@ trade_ideas = {
 	fast_negotiations = {
 		caravan_power = 0.25
 	}
-
-	ai_will_do = {
-		factor = 0.7
-		modifier = {
-			factor = 0
-			NOT = { num_of_cities = 6 }
-			NOT = { has_government_attribute = is_merchant_republic }
-		}
-		modifier = {
-			factor = 3
-			has_government_attribute = is_merchant_republic
-		}
-	}
 }
 
 influence_ideas = {
@@ -560,22 +497,6 @@ influence_ideas = {
 	}
 	marcher_lords = {
 		vassal_forcelimit_bonus = 1
-	}
-
-	ai_will_do = {
-		factor = 0.5
-		modifier = {
-			factor = 1.5
-			is_emperor = yes
-		}
-		modifier = {
-			factor = 1.7
-			vassal = 1
-		}
-		modifier = {
-			factor = 1.7
-			vassal = 2
-		}
 	}
 }
 
@@ -611,14 +532,6 @@ secularist_ideas = {
 	}
 	humanist_tolerance = {
 		all_power_cost = -0.025
-	}
-
-	ai_will_do = {
-		factor = 0.9
-		modifier = {
-			factor = 0
-			has_idea_group = religious_ideas
-		}
 	}
 }
 
@@ -656,22 +569,6 @@ innovativeness_ideas = {
 	}
 	expanded_policies = {
 		free_policy = 1
-	}
-
-	ai_will_do = {
-		factor = 0.3
-		modifier = {
-			factor = 2
-			has_reform = steppe_horde
-		}
-		modifier = {
-			factor = 2
-			num_of_cities = 20
-		}
-		modifier = {
-			factor = 2
-			num_of_cities = 50
-		}
 	}
 }
 
@@ -717,14 +614,6 @@ religious_ideas = {
 		cb_on_religious_enemies = yes
 		warscore_cost_vs_other_religion = -0.25
 	}
-
-	ai_will_do = {
-		factor = 0.9
-		modifier = {
-			factor = 0
-			has_idea_group = humanist_ideas
-		}
-	}
 }
 
 
@@ -756,30 +645,6 @@ economic_ideas = {
 	smithian_economics = {
 		production_efficiency = 0.1
  	}
-
-	ai_will_do = {
-		factor = 0.85
-		modifier = {
-			factor = 1.5
-			inflation = 5
-		}
-		modifier = {
-			factor = 1.5
-			inflation = 10
-		}
-		modifier = {
-			factor = 2
-			has_reform = steppe_horde
-		}
-		modifier = {
-			factor = 1.3
-			num_of_cities = 20
-		}
-		modifier = {
-			factor = 1.3
-			num_of_cities = 50
-		}
-	}
 }
 
 expansion_ideas = {
@@ -813,52 +678,6 @@ expansion_ideas = {
 	competetive_merchants  = {
 		global_trade_power = 0.2
 	}
-
-	ai_will_do = {
-		factor = 0.48
-		modifier = {
-			factor = 10
-			OR = {
-				has_idea_group = exploration_ideas
-				is_colonial_nation = yes
-			}
-		}
-		modifier = {
-			factor = 5
-			OR = {
-				tag = CAS
-				tag = POR
-				tag = SPA
-			}
-		}
-		modifier = {
-			factor = 10
-			NOT = { has_dlc = "Third Rome" } # Has siberian frontier instead
-			tag = RUS
-			num_of_cities = 20
-			any_owned_province = {
-				has_empty_adjacent_province = yes
-			}
-		}
-		modifier = {
-			factor = 0
-			NOT = { has_idea_group = exploration_ideas }
-			NOT = { is_colonial_nation = yes }
-			NOT = {
-				any_owned_province = {
-					has_empty_adjacent_province = yes
-				}
-			}
-		}
-		modifier = {
-			factor = 0.1
-			NOT = {
-				technology_group = western
-				technology_group = eastern
-				technology_group = muslim
-			}
-		}
-	}
 }
 
 
@@ -891,14 +710,6 @@ administrative_ideas = {
 	}
 	civil_servants = {
 		adm_tech_cost_modifier = -0.1
-	}
-
-	ai_will_do = {
-		factor = 0.96
-		modifier = {
-			factor = 2
-			has_reform = steppe_horde
-		}
 	}
 }
 
@@ -934,13 +745,5 @@ administrative_ideas = {
 #	}
 #	humanist_tolerance = {
 #		all_power_cost = -0.025
-#	}
-#
-#	ai_will_do = {
-#		factor = 0.9
-#		modifier = {
-#			factor = 0
-#			has_idea_group = religious_ideas
-#		}
 #	}
 #}
