@@ -142,15 +142,17 @@ country_decisions = {
 
 	so_recruit_general = {
 		potenital = {
-			ai = no
 			NOT = { 
 				has_country_modifier = so_recruited_general
 			}
 		}
 		allow = {
-			ai = no
-			NOT = { 
-				has_country_modifier = so_recruited_general
+			NOT = { has_country_modifier = so_recruited_general }
+			if = {
+				limit = {
+					AI = yes
+				}
+				num_of_generals = 3
 			}
 		}
 
@@ -159,7 +161,7 @@ country_decisions = {
 			add_years_of_income = -0.1
 			add_country_modifier = {
 				name = so_recruited_general
-				duration = 360
+				duration = 3650
 				hidden = yes
 			}
 		}
@@ -173,9 +175,16 @@ country_decisions = {
 			}
 		}
 		allow = {
-			ai = no
 			NOT = { 
-				has_country_modifier = so_recruited_conquistador
+				AND = {
+					has_country_modifier = so_recruited_conquistador
+					if = {
+						limit = {
+							AI = yes
+						}
+						num_of_conquistadors = 2
+					}
+				}
 			}
 		}
 
@@ -184,7 +193,7 @@ country_decisions = {
 			add_years_of_income = -0.1
 			add_country_modifier = {
 				name = so_recruited_conquistador
-				duration = 360
+				duration = 3650
 				hidden = yes
 			}
 		}
@@ -192,16 +201,22 @@ country_decisions = {
 
 	so_recruit_explorer = {
 		potenital = {
-			ai = no
 			NOT = { 
 				has_country_modifier = so_recruited_explorer
 			}
 		}
 		allow = {
-			ai = no
 			NOT = { 
-				has_country_modifier = so_recruited_explorer
-			}
+				AND = {
+					has_country_modifier = so_recruited_explorer
+					if = {
+						limit = {
+							AI = yes
+						}
+						num_of_explorers = 2
+					}
+				}
+			}	
 		}
 
 		effect = {
@@ -209,7 +224,7 @@ country_decisions = {
 			add_years_of_income = -0.1
 			add_country_modifier = {
 				name = so_recruited_explorer
-				duration = 360
+				duration = 3650
 				hidden = yes
 			}
 		}
@@ -218,7 +233,6 @@ country_decisions = {
 	so_recruit_colonist = {
 		potenital = {
 			AND = {
-				ai = no
 				has_age_ability = ab_venice_ship_trade
 				NOT = {
 					had_country_flag = so_recruited_colonist
@@ -227,7 +241,6 @@ country_decisions = {
 		}
 		allow = {
 			AND = {
-				ai = no
 				has_age_ability = ab_venice_ship_trade
 				NOT = {
 					has_country_modifier = so_recruited_colonist
