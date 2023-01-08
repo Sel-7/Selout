@@ -151,16 +151,24 @@ so_devolution_of_the_church = {
 
 so_huge_new_world_bosses = {
 	potential = {
-		tag = AZT
+		OR = {
+			tag = AZT
+			tag = CSU
+			tag = INC
+		}
 		NOT = {
-			is_vassal = yes
+			is_subject = yes
 		}
 	}
 
 	trigger = {
-		tag = AZT
+		OR = {
+			tag = AZT
+			tag = CSU
+			tag = INC
+		}
 		NOT = {
-			is_vassal = yes
+			is_subject = yes
 		}
 	}
 
@@ -170,7 +178,10 @@ so_huge_new_world_bosses = {
 	global_manpower_modifier = 0.2
 	global_regiment_cost = -0.1
 	land_forcelimit_modifier = 0.5
+	land_forcelimit = 30
 	discipline = 0.1
 	land_morale = 0.2
-	yearly_doom_reduction = 1
+	yearly_doom_reduction = 3
+	yearly_authority = 3
+	diplomatic_upkeep = 8
 }
