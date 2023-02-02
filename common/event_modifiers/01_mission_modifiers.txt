@@ -13,6 +13,7 @@ great_rock_mine = {
 }
 
 #####
+
 #Generic Military Mission Rewards:
 
 thriving_arms_industry = {
