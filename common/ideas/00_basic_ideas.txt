@@ -71,11 +71,11 @@ plutocracy_ideas = {
 		mercenary_discipline = 0.05
 	}
 	abolished_serfdom = {
-		land_morale = 0.1
+		merchants = 1
 	}
 	bill_of_rights = {
 		morale_damage = 0.1
-		morale_damage_received = 0.05
+		morale_damage_received = -0.05
 	}
 	free_merchants = {
 		infantry_power = 0.075
@@ -171,7 +171,7 @@ theocracy_gov_ideas = {
 	}
 	conviction_of_sin = {
 		development_cost = -0.025
-		yearly_army_professionalism = 0.02
+		yearly_army_professionalism = 0.002
 	}
 	martyrs = {
 		manpower_in_true_faith_provinces = 0.10
@@ -236,7 +236,7 @@ offensive_ideas = {
 	}
 	glorious_arms = {
 		fire_damage = 0.1
-		fire_damage = -0.1
+		fire_damage_received = -0.1
 	}
 	engineer_corps = {
 		siege_ability = 0.15
@@ -335,7 +335,7 @@ quantity_ideas = {
 		land_attrition = -0.2
 	}
 	camp_followers = {
-		land_maintanence_modifier = -0.1
+		land_maintenance_modifier = -0.1
 	}
 	garrison_conscription = {
 		reserves_organisation = -0.2
@@ -410,7 +410,8 @@ diplomatic_ideas = {
 		administrative_efficiency = 0.05
 	}
 	benign_diplomats = {
-		improve_relation_modifier = 0.25
+		global_trade_goods_size_modifier = 0.025
+		production_efficiency = 0.075
 	}
 	experienced_diplomats  = {
 		country_diplomatic_power = 1
@@ -500,7 +501,7 @@ secularist_ideas = {
 		manpower_in_accepted_culture_provinces  = 0.15
 	}
 	ecumenism = {
-		advisor_cost = 0.05
+		advisor_cost = -0.05
 	}
 	indirect_rule = {
 		idea_cost = -0.1
