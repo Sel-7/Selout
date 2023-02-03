@@ -321,7 +321,7 @@ quality_ideas = {
 		shock_damage_received = -0.05
 	}
 	massed_battery = {
-		yearly_army_professionalism = 0.3
+		yearly_army_professionalism = 0.003
 	}
 
 	ai_will_do = {
