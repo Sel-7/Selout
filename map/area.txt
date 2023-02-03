@@ -2077,7 +2077,7 @@ east_bengal_area = { #5
 }
 
 north_bengal_area = { #4
-	562 2045 2046 4486
+	562 2045 2046 4486 2042
 }
 
 tripura_area = { #3
@@ -2240,7 +2240,7 @@ berar_area = { #5
 }
 
 assam_area = { #5
-	566 571 2040 2042 4440
+	566 571 2040 4440 4404
 }
 
 himalayan_hills_area = { #4
@@ -2307,7 +2307,7 @@ chindwin_area = {
 }
 
 kachin_area = { #4
-	582 2395 2396 4404 4405
+	582 2395 2396  4405
 }
 
 shan_hill_area = { #4
@@ -2356,11 +2356,11 @@ angkor_area = { #5
 }
 
 lower_burma_area = { #5
-	586 590 1815 2403 4399
+	586 590 2403 4399
 }
 
 arakan_area = { #3
-	568 579 2402
+	568 579 1815 2402 
 }
 
 mekong_area = { #4
