@@ -265,31 +265,31 @@ defensive_ideas = {
 	category = MIL
 
 	bonus = {
-		hostile_attrition = 1
-		max_hostile_attrition = 1 
+		land_morale = 0.075
 	}
 
 	battlefield_commisions = {
 		army_tradition_from_battle = 1.0
 	}
 	military_drill = {
-		land_morale = 0.15
+		land_morale = 0.075
 	}
 	improved_manuever = {
-		leader_land_manuever = 1
+		shock_damage_received = -0.1
+		fire_damage_received = -0.1
 	}
 	regimental_system = {
-		land_maintenance_modifier = -0.05
+		global_manpower_modifier = 0.2
 	}
 	defensive_mentality = {
 		defensiveness = 0.2
-		fort_maintenance_modifier = -0.1
+		garrison_size = 0.15
 	}
 	supply_trains = {
 		reinforce_speed = 0.33
 	}
 	improved_foraging = {
-		land_attrition = -0.25
+		land_forecelimit_modifier = 0.125
 	}
 }
 
