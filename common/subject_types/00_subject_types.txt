@@ -396,6 +396,7 @@ personal_union = {
 
 	liberty_desire_negative_prestige = 1.0
 	military_focus = 0.66
+	forcelimit_to_overlord = 0.1
 
 	relative_power_class = 1
 	should_quit_wars_on_activation = yes
