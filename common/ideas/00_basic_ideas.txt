@@ -514,7 +514,7 @@ secularist_ideas = {
 		religious_unity = 0.25
 	}
 	local_traditions = {
-		manpower_in_accepted_culture_provinces  = 0.1
+		manpower_in_accepted_culture_provinces  = 0.15
 	}
 	ecumenism = {
 		tolerance_heretic = 2
@@ -548,24 +548,23 @@ innovativeness_ideas = {
 
 	patron_of_art  = {
 		monthly_splendor = 1
-		prestige_decay = -0.01
+		prestige = 1
 	}
 	empiricism = {
 		innovativeness_gain = 1
 	}
 	scientific_revolution = {
-		technology_cost = -0.1
+		technology_cost = -0.075
 	}
 	dynamic_court = {
 		advisor_pool = 1
 		advisor_cost = -0.025
 	}
 	print_culture = {
-		idea_cost = -0.1
+		idea_cost = -0.075
 	}
 	optimism = {
-		war_exhaustion = -0.05
-		free_leader_pool = 1
+		production_efficiency = 0.1
 	}
 	expanded_policies = {
 		free_policy = 1
@@ -584,6 +583,7 @@ religious_ideas = {
 
 	missionary_schools = {
 		missionaries = 1
+		global_missionary_strength = 0.03
 	}
 	church_attendance_duty = {
 		stability_cost_modifier = -0.25
@@ -607,12 +607,12 @@ religious_ideas = {
 		prestige = 1
 	}
 	inquisition = {
-		missionary_maintenance_cost = -0.5
-		prestige_per_development_from_conversion = 0.1
+		manpower_in_true_faith_provinces = 0.1
+		manpower_in_own_culture_provinces = 0.1
 	}
 	deus_vult = {
 		cb_on_religious_enemies = yes
-		warscore_cost_vs_other_religion = -0.25
+		warscore_cost_vs_other_religion = -0.15
 	}
 }
 
@@ -629,6 +629,7 @@ economic_ideas = {
 	}
 	organised_construction = {
 		build_cost = -0.1
+		build_time = -0.1
 	}
 	national_bank = {
 		inflation_reduction = 0.1
@@ -643,7 +644,7 @@ economic_ideas = {
 		land_maintenance_modifier = -0.05
 	}
 	smithian_economics = {
-		production_efficiency = 0.1
+		global_trade_goods_size_modifier = 0.1
  	}
 }
 
@@ -652,7 +653,7 @@ expansion_ideas = {
 	important = yes
 
 	bonus = {
- 		min_autonomy_in_territories = -0.10
+ 		min_autonomy_in_territories = -0.2
 	}
 
 	additional_colonists = {
@@ -670,7 +671,7 @@ expansion_ideas = {
 		build_cost = -0.05
 	}
 	additional_diplomats = {
-		diplomatic_upkeep = 1
+		development_cost = -0.025
 	}
 	general_colonization_law  = {
 		num_accepted_cultures = 2
@@ -696,13 +697,14 @@ administrative_ideas = {
 		core_creation = -0.25
 	}
 	benefits_for_mercenaries = {
-		merc_maintenance_modifier = -0.15
+		reform_progress_growth = 0.25
 	}
 	bookkeeping = {
 		interest = -0.5
 	}
 	organised_mercenary_recruitment = {
 		governing_capacity_modifier = 0.25
+		state_maintenance_modifier = -0.1
 	}
 	administrative_efficiency_idea = {
 		advisor_pool = 1
