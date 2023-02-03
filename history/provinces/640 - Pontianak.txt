@@ -19,13 +19,13 @@ discovered_by = indian
 discovered_by = muslim
 discovered_by = ottoman
 
-1441.1.1 = {
-	owner = SMB
-	controller = SMB
-	add_core = SMB
-	is_city = yes
-	trade_goods = fish
-}
+#1441.1.1 = {
+#	owner = SMB
+#	controller = SMB
+#	add_core = SMB
+#	is_city = yes
+#	trade_goods = fish
+#}
 
 1521.1.1 = { discovered_by = POR }
 
