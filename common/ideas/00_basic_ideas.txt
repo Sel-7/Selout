@@ -365,17 +365,16 @@ spy_ideas = {
 	category = DIP
 
 	bonus = {
-		rebel_support_efficiency = 1
-		discovered_relations_impact = -1
+		min_autonomy_in_territories = -0.2 = -0.15
 	}
 	
 	claim_fabrication = {
-		fabricate_claims_cost = -0.25
+		core_creation = -0.125
 		can_fabricate_for_vassals = yes
 	}
 
 	state_propaganda = {
-		ae_impact = -0.2
+		trade_steering = 0.15
 	}
 
 	efficient_spies = {
@@ -384,23 +383,20 @@ spy_ideas = {
 	}	
 	
 	agent_training = {
-		diplomats = 1
 		advisor_cost = -0.15
 	}
 
 	vetting = {
-		global_spy_defence = 0.33
+		manpower_in_culture_group_provinces = 0.15
 		yearly_corruption = -0.2
 	}
 	
 	privateers = {
-		capture_ship_chance = 0.25
-		privateer_efficiency = 0.33
+		culture_conversion_cost = -0.25
 	}
 	
 	blackmailing = {
-		monthly_favor_modifier = 0.33
-		accept_vassalization_reasons = 15
+		advisor_pool = 2
 	}
 }
 
@@ -412,25 +408,27 @@ diplomatic_ideas = {
 	}
 
 	foreign_embassies = {
-		diplomats = 1
+		manpower_in_accepted_culture_provinces = 0.1
+		manpower_in_culture_group_provinces = 0.1
+		manpower_in_own_culture_provinces = 0.1
 	}
 	cabinet = {
-		diplomatic_upkeep = 1
+		dip_tech_cost_modifier = -0.1
 	}
 	grand_banquets = {
-		diplomats = 1
+		administrative_efficiency = 0.05
 	}
 	benign_diplomats = {
 		improve_relation_modifier = 0.25
 	}
 	experienced_diplomats  = {
-		diplomatic_reputation = 2
+		country_diplomatic_power = 1
 	}
 	flexible_negotiation = {
 		province_warscore_cost = -0.2
 	}
 	diplomatic_corps = {
-		dip_tech_cost_modifier = -0.1
+		power_projection_from_insults = 1
 	}
 }
 
@@ -439,32 +437,28 @@ trade_ideas = {
 
 	bonus = {
 		merchants = 1
-		burghers_loyalty_modifier = 0.1
-		jains_loyalty_modifier = 0.1
-		vaisyas_loyalty_modifier = 0.1
 	}
 
 	shrewd_commerce_practise = {
- 		global_trade_power = 0.2
+ 		merchants = 2
   	}
   	free_trade = {
-  		merchants = 1
+		global_foreign_trade_power = 0.2
   	}
 	merchant_adventures = {
-		trade_range_modifier = 0.25
+		trade_efficiency = 0.1
 	}
 	national_trade_policy = {
-		trade_efficiency = 0.1
-		mercantilism_cost = -0.25
+		mercantilism_cost = -0.35
 	}
 	overseas_merchants = {
-		merchants = 1
+		global_own_trade_power = 0.2
 	}
 	trade_manipulation = {
 		trade_steering = 0.25
 	}
 	fast_negotiations = {
-		caravan_power = 0.25
+		center_of_trade_upgrade_cost = -0.25
 	}
 }
 
@@ -472,7 +466,7 @@ influence_ideas = {
 	category = DIP
 
 	bonus = {
-		unjustified_demands = -0.5
+		global_tax_modifier = 0.1
 	}
 
 	tribute_system = {
@@ -480,23 +474,24 @@ influence_ideas = {
 	}
 	
 	additional_loyalist_recruitment = {
-		reduced_liberty_desire = 15
+		reduced_liberty_desire = 25
 	}
 	
 	integrated_elites = {
 		diplomatic_annexation_cost = -0.25
 	}
 	buffer_states = {
-		diplomatic_upkeep = 1
+		mercenary_cost = -0.15
+		mercenary_manpower = 0.15
 	}
 	diplomatic_influence = {
 		diplomatic_reputation = 2
 	}
 	postal_service = {
-		envoy_travel_time = -0.25
+		land_forcelimit = 25
 	}
 	marcher_lords = {
-		vassal_forcelimit_bonus = 1
+		vassal_forcelimit_bonus = 0.75
 	}
 }
 
@@ -504,31 +499,27 @@ secularist_ideas = {
 	category = DIP
 
 	bonus = {
-		idea_cost = -0.1
-		yearly_harmony = 0.25  # Used if religion uses harmony (confucianism)
-		brahmins_muslim_loyalty_modifier = 0.1
-		dhimmi_loyalty_modifier = 0.1
+		all_estate_loyalty_equilibrium = 0.1
 	}
 
 	tolerance_idea = {
-		religious_unity = 0.25
+		global_trade_goods_size_modifier = 0.1
 	}
 	local_traditions = {
 		manpower_in_accepted_culture_provinces  = 0.15
 	}
 	ecumenism = {
-		tolerance_heretic = 2
-		tolerance_heathen = 2
+		advisor_cost = 0.05
 	}
 	indirect_rule = {
-		years_of_nationalism = -10
+		idea_cost = -0.1
 	}
 	cultural_ties = {
 		num_accepted_cultures = 2
 	}
 	benevolence = {
-		possible_adm_policy = 1
-		free_adm_policy = 1
+		possible_dip_policy = 1
+		free_dip_policy = 1
 	}
 	humanist_tolerance = {
 		all_power_cost = -0.025
