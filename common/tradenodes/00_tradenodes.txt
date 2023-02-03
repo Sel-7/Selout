@@ -1971,6 +1971,8 @@ lubeck={
 		44 53 1857 4772 # Lower Saxony Area
 		54 55 1874 4771 # Weser Area
 		13 1775 4141 # Holstein Area
+		47 2994 4745 1858 # Vorpommern Area
+		48 2995 4746 # Hinterpommern Area
 
 		#Scandinavia
 		15 1984 4142 4149 # North Jutland Area
