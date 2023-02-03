@@ -333,7 +333,7 @@ quantity_ideas = {
 	category = MIL
 
 	bonus = {
-		land_forcelimit_modifier  = 0.25
+		land_forcelimit_modifier  = 0.33
 	}
 	mass_army = {
 		global_manpower_modifier = 0.25
@@ -342,19 +342,19 @@ quantity_ideas = {
 		manpower_recovery_speed = 0.20
 	}
 	enforced_service = {
-		global_regiment_cost = -0.1
+		land_attrition = -0.2
 	}
 	camp_followers = {
-		global_supply_limit_modifier = 0.33
+		land_maintanence_modifier = -0.1
 	}
 	garrison_conscription = {
-		garrison_size = 0.25
+		reserves_organisation = -0.2
 	}
 	the_old_and_infirm = {
-		land_maintenance_modifier = -0.05
+		discipline = 0.025
 	}
 	expanded_supply_trains = {
-		land_attrition = -0.1
+		free_land_leader_pool = 3
 	}
 }
 
