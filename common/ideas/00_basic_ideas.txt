@@ -45,7 +45,7 @@ aristocracy_ideas = {
 	international_nobility = {
 		general_cost = -0.1
 		shock_damage = 0.1
-		shock_damage_received = 0.05
+		shock_damage_received = -0.05
 	}
 	noble_resilience = {
 		land_morale = 0.05
@@ -171,7 +171,6 @@ theocracy_gov_ideas = {
 	}
 	conviction_of_sin = {
 		development_cost = -0.025
-		yearly_army_professionalism = 0.002
 	}
 	martyrs = {
 		manpower_in_true_faith_provinces = 0.10
@@ -246,7 +245,7 @@ offensive_ideas = {
 		global_manpower_modifier = 0.1
 	}
 	napoleonic_warfare = {
-		discipline = 0.05
+		discipline = 0.03
 	}
 }
 
