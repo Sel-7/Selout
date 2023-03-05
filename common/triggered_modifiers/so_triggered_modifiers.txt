@@ -20,7 +20,7 @@ so_reduced_devastion = {
 			}
 		}
 	}
-	global_monthly_devastation = -0.5
+	global_monthly_devastation = -0.05
 }
 
 so_increased_prosperity = {

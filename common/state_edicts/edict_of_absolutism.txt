@@ -1,19 +1,14 @@
 edict_of_absolutism = {
 	potential = {
-		current_age = age_of_absolutism
+		always = yes
 	}
 	
 	allow = {
-		custom_trigger_tooltip = {
-			tooltip =edict_of_absolutism_tooltip
-			has_country_flag = edict_of_absolutism
-		}
-		#current_age = age_of_absolutism
+		always = yes
 	}
 	
 	modifier = {
-	
-		local_monthly_devastation = -0.25
+		local_monthly_devastation = -0.2
 	}
 	
 	color = {  116 198 240  }
