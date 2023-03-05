@@ -95,7 +95,7 @@ so_noble_loyalty_war = {
 			}
 		}
 	}
-	land_maintenance_modifier = -0.05
+	land_morale = 0.03
 	nobles_loyalty_modifier = 0.15
 }
 
