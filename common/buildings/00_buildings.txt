@@ -355,23 +355,8 @@ fort_15th = {
 	on_obsolete = {
 	}
 
-	build_trigger = {
-		area = {
-			limit = { owned_by = ROOT }
-			NOT = {
-				has_building = fort_15th
-				has_construction = fort_15th
-				has_building = fort_16th
-				has_construction = fort_16th
-				has_building = fort_17th
-				has_construction = fort_17th
-				has_building = fort_18th
-				has_construction = fort_18th
-			}
-		}
-	}
 	onmap = yes
-	#influencing_fort = yes
+	influencing_fort = yes
 
 	ai_will_do = {
 		factor = 1 #Lots of logic in code instead, that multiplies with this value
@@ -1107,6 +1092,7 @@ fort_17th = {
 	on_obsolete = {
 	}
 
+
 	onmap = yes
 
 	influencing_fort = yes
@@ -1492,7 +1478,6 @@ fort_18th = {
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
 	on_obsolete = {
 	}
-
 	onmap = yes
 
 	influencing_fort = yes
