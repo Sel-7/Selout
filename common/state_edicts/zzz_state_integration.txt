@@ -10,7 +10,7 @@ state_integration_state_edict = {
 	}
 	
 	modifier = {
-		local_governing_cost = -0.25
+		local_governing_cost = -0.33
 	}
 	
 	color = { 255 255 128 }
