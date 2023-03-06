@@ -370,29 +370,38 @@ eng_gbr_missions_5 = {
 		icon = mission_english_economy
 		position = 2
 		required_missions = { eng_mighty_army }
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 236 
+				province_id = 235
+				province_id = 238
+				province_id = 245
+			}
+		}
 		
 		trigger = {
 			236 = {
 				AND = {
-					base_production = 12
+					development = 30
 					owned_by = ROOT
 				}
 			}
 			235 = {
 				AND = {
-					base_production = 12
+					base_production = 18
 					owned_by = ROOT
 				}
 			}
 			238 = {
 				AND = {
-					base_production = 12
+					base_production = 18
 					owned_by = ROOT
 				}
 			}
 			245 = {
 				AND = {
-					base_production = 12
+					base_production = 18
 					owned_by = ROOT
 				}
 			}
@@ -421,16 +430,23 @@ eng_gbr_missions_5 = {
 			eng_gbr_english_cloth
 		}
 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1861
+				province_id = 4785
+			}
+		}
+
 		trigger = {
 			1861 = {
 				AND = {
-					base_production = 12
+					development = 18
 					owned_by = ROOT
 				}
 			}
 			4785 = {
 				AND = {
-					base_production = 12
+					development = 18
 					owned_by = ROOT
 				}
 			}
